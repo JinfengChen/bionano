@@ -29,7 +29,7 @@ echo "CPU: $CPU"
 echo "N: $N"
 
 echo "Summary BNX bionano raw data"
-#perl ~/BigData/00.RD/Assembly/bionano/install/Irys-scaffolding/KSU_bioinfo_lab/map_tools/bnx_stats.pl --min_length_kb 150 ~/BigData/00.RD/Assembly/bionano/input/Fairchild/RawMolecules_citrus.bnx
+perl ~/BigData/00.RD/Assembly/bionano/install/Irys-scaffolding/KSU_bioinfo_lab/map_tools/bnx_stats.pl --min_length_kb 150 ~/BigData/00.RD/Assembly/bionano/input/Fairchild/RawMolecules_citrus.bnx
 echo "In-silico digest input FASTA into CMAP"
 perl ~/BigData/00.RD/Assembly/bionano/install/Solve_03062017Rel/HybridScaffold/03062017/scripts/fa2cmap_multi_color.pl -i ~/BigData/00.RD/Assembly/bionano/input/Pacbio_assembly/genome_ref.fa -e BssSI 1
 
