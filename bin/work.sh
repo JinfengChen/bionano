@@ -25,4 +25,6 @@ sbatch assembly_commands_relaxed_t_150.sh
 sbatch assembly_commands_strict_t_150.sh
 echo "Step3.Hybrid_assembly"
 sbatch Step3_Hybrid_assembly.sh
+sbatch -p highmem --array 1-9 Step3_Hybrid_assembly_chr.sh
+sbatch --array 7 Step3_Hybrid_assembly_chr_after_merge.sh
 
